@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Maris_Sorana_Lab2.Data;
 using Maris_Sorana_Lab2.Models;
 
-namespace Maris_Sorana_Lab2.Pages
+namespace Maris_Sorana_Lab2.Pages.Authors
 {
     public class IndexModel : PageModel
     {
@@ -23,9 +23,9 @@ namespace Maris_Sorana_Lab2.Pages
 
         public async Task OnGetAsync()
         {
-            if (_context.Authors != null)
+            if (_context.Author != null)
             {
-                Author = await _context.Authors.ToListAsync();
+                Author = await _context.Author.ToListAsync();
             }
         }
     }

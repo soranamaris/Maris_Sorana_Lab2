@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Maris_Sorana_Lab2.Data;
 using Maris_Sorana_Lab2.Models;
 
-namespace Maris_Sorana_Lab2.Pages
+namespace Maris_Sorana_Lab2.Pages.Categories
 {
     public class IndexModel : PageModel
     {
@@ -19,13 +19,13 @@ namespace Maris_Sorana_Lab2.Pages
             _context = context;
         }
 
-        public IList<Author> Author { get;set; } = default!;
+        public IList<Category> Category { get;set; } = default!;
 
         public async Task OnGetAsync()
         {
-            if (_context.Authors != null)
+            if (_context.Category != null)
             {
-                Author = await _context.Authors.ToListAsync();
+                Category = await _context.Category.ToListAsync();
             }
         }
     }
