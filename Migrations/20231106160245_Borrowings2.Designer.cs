@@ -4,6 +4,7 @@ using Maris_Sorana_Lab2.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Maris_Sorana_Lab2.Migrations
 {
     [DbContext(typeof(Maris_Sorana_Lab2Context))]
-    partial class Maris_Sorana_Lab2ContextModelSnapshot : ModelSnapshot
+    [Migration("20231106160245_Borrowings2")]
+    partial class Borrowings2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

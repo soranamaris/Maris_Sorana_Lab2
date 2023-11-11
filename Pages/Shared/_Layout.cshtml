@@ -24,7 +24,13 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Categories/Index">Categories</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asppage="/Members/Index">Members</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asppage="/Borrowings/Index">Borrowings</a>
+                        </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
                         </li>
@@ -36,6 +42,7 @@
                             <!-- Adăugat link pentru Authors -->
                         </li>
                     </ul>
+                    <partial name="_LoginPartial" />
                 </div>
             </div>
         </nav>
