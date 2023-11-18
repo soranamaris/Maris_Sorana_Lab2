@@ -7,9 +7,12 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Maris_Sorana_Lab2.Data;
 using Maris_Sorana_Lab2.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Maris_Sorana_Lab2.Pages.Books
 {
+    [Authorize(Roles = "Admin")]
+
     public class CreateModel :BookCategoriesPageModel
     {
         private readonly Maris_Sorana_Lab2.Data.Maris_Sorana_Lab2Context _context;
