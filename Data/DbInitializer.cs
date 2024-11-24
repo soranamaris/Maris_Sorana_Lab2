@@ -16,33 +16,38 @@ namespace Maris_Sorana_Lab2.Data
                     return; // BD a fost creata anterior
                 }
                 context.Book.AddRange(
-                new Book
-                {
-                    Title = "Baltagul",
-                    Author = "Mihail Sadoveanu",
-                    Price = Decimal.Parse("22")
-                },
+                    new Book
+                    {
+                        Title = "Baltagul",
+                        Price = Decimal.Parse("22")
+                        
+                    },
+                    new Book
+                    {
+                        Title = "Enigma Otiliei",
+                        Price = Decimal.Parse("18")
+                        
+                    },
+                    new Book
+                    {
+                        Title = "Maytrei",
+                        Price = Decimal.Parse("27")
+                       
+                    }
+                    );
 
-                new Book
-                {
-                    Title = "Enigma Otiliei",
-                    Author = "George Calinescu",
-                    Price = Decimal.Parse("18")
-                },
-
-                new Book
-                {
-                    Title = "Maytrei",
-                    Author = "Mircea Eliade",
-                    Price = Decimal.Parse("27")
-                }
-
-                );
                 context.Genre.AddRange(
-            new Genre { Name = "Roman" },
-            new Genre { Name = "Nuvela" },
-            new Genre { Name = "Poezie" }
-             );
+                    new Genre { Name = "Roman" },
+                    new Genre { Name = "Nuvela" },
+                    new Genre { Name = "Poezie" }
+                );
+
+                context.Author.AddRange(
+                    new Author { ID = 1, FirstName = "Mihail", LastName = "Sadoveanu" },
+                    new Author { ID = 2, FirstName = "George", LastName = "Calinescu" },
+                    new Author { ID = 3, FirstName = "Mircea", LastName = "Eliade" }
+                );
+
                 context.Customer.AddRange(
                 new Customer
                 {
@@ -53,7 +58,7 @@ namespace Maris_Sorana_Lab2.Data
                 new Customer
                 {
                     Name = "Mihailescu Cornel",
-                    Adress = "Str. Bucuresti, nr.45,ap. 2",
+                    Adress = "Str. Bucuresti, nr.45, ap. 2",
                     BirthDate = DateTime.Parse("1969 - 07 - 08")
                 }
 
