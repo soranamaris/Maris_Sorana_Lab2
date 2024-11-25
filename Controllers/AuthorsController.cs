@@ -34,6 +34,7 @@ namespace Maris_Sorana_Lab2.Controllers
             }
 
             var author = await _context.Author
+                
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (author == null)
             {
