@@ -82,10 +82,10 @@ namespace Maris_Sorana_Lab2.Data
                      new Order{BookID=6,CustomerID=customers.Single(c => c.Name == "Mihailescu Cornel").CustomerID,
                      OrderDate=DateTime.Parse("2024-10-28")},
                 };
-                //foreach (Order e in orders)
-                //{
-                //    context.Order.Add(e);
-                //}
+                foreach (Order e in orders)
+                {
+                    context.Order.Add(e);
+                }
                 context.SaveChanges();
                 var publishers = new Publisher[]
                 {
