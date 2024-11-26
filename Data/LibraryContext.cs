@@ -18,5 +18,8 @@ namespace Maris_Sorana_Lab2.Data
         public DbSet<Maris_Sorana_Lab2.Models.Customer> Customer { get; set; } = default!;
         public DbSet<Maris_Sorana_Lab2.Models.Genre> Genre { get; set; } = default!;
         public DbSet<Maris_Sorana_Lab2.Models.Author> Author { get; set; } = default!;
+        public DbSet<Publisher> Publisher { get; set; } = default!;
+        public DbSet<PublishedBook> PublishedBooks { get; set; } = default!;
+        public DbSet<Order> Order { get; set; }
     }
 }
