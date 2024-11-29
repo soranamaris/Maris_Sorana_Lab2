@@ -8,8 +8,10 @@ using Microsoft.EntityFrameworkCore;
 using Maris_Sorana_Lab2.Data;
 using Maris_Sorana_Lab2.Models;
 using Maris_Sorana_Lab2.Models.LibraryViewModels;
+using Microsoft.AspNetCore.Authorization;
 namespace Maris_Sorana_Lab2.Controllers
 {
+    [Authorize(Policy = "OnlySales")]
     public class PublishersController : Controller
     {
         private readonly LibraryContext _context;
