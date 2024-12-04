@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryModel", "..\LibraryM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryWebAPI", "..\LibraryWebAPI\LibraryWebAPI.csproj", "{104C9125-665B-4D9C-96B3-754D9BA1A4A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcCustomersService", "..\GrpcCustomersService\GrpcCustomersService.csproj", "{F29C280D-E75B-4DBB-90B9-12A7FE03D2C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{104C9125-665B-4D9C-96B3-754D9BA1A4A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{104C9125-665B-4D9C-96B3-754D9BA1A4A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{104C9125-665B-4D9C-96B3-754D9BA1A4A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F29C280D-E75B-4DBB-90B9-12A7FE03D2C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F29C280D-E75B-4DBB-90B9-12A7FE03D2C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F29C280D-E75B-4DBB-90B9-12A7FE03D2C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F29C280D-E75B-4DBB-90B9-12A7FE03D2C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
