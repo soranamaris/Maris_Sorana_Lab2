@@ -45,5 +45,9 @@ namespace Maris_Sorana_Lab2.Controllers
         {
             return View();
         }
+        public IActionResult Notification()
+        {
+            return View();
+        }
     }
 }

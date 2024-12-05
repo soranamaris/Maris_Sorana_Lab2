@@ -63,5 +63,6 @@ app.MapControllerRoute(
 app.MapHub<ChatHub>("/Chat");
 app.MapRazorPages();
 
+app.MapHub<NotificationHub>("/Notification");
 
 app.Run();
